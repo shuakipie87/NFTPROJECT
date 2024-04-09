@@ -36,6 +36,16 @@
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": "cdb3410ae829f5e2a29f71f53efbce66bde1187948d6317de6918d5003576ca7"
+		},
+		"testnet-account": {
+			"address": "e89e1fd8fd79470c",
+			"key": {
+				"type": "hex",
+				"index": 0,
+				"signatureAlgorithm": "ECDSA_P256",
+				"hashAlgorithm": "SHA3_256",
+				"privateKey": "fcd3926db2aad52ed6dc0e1cac5ccc8cb1f0b3ee175bab72519f09c6ef0188ae"
+			}
 		}
 	},
 	"deployments": {
@@ -43,6 +53,11 @@
 			"emulator-account": [
 				"NonFungibleToken",
 				"MetadataViews",
+				"ExampleNFT"
+			]
+		},
+		"testnet": {
+			"testnet-account": [
 				"ExampleNFT"
 			]
 		}
